@@ -1,0 +1,76 @@
+.birthday-card {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #EDEDED;
+    padding: 40px;
+    border: 5px solid #F7DF1E;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: rotateZ(180deg);
+    animation: shake 0.5s ease-in-out infinite;
+  }
+  
+  h1 {
+    color: #000;
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px #F7DF1E;
+  }
+  
+  p {
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border: 5px solid #F7DF1E;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cups-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    animation: spin 3s ease-in-out infinite;
+  }
+  
+  .cup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 5px solid black;
+    margin: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    transform: rotateZ(-5deg);
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: rotateZ(5deg);
+    }
+    50% {
+      transform: rotateZ(-5deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
